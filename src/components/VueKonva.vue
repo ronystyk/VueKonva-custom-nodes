@@ -68,6 +68,13 @@ const nodeComponents = {
   [NODE_TYPES.END]: EndNode,
 }
 
+const props = defineProps({
+  onPaneReady: {
+    type: Function,
+    required: true
+  }
+})
+
 // Function to get component by node type
 const getNodeComponent = (type) => {
   return nodeComponents[type] || FormNode // Default to FormNode if type not found
@@ -131,6 +138,8 @@ const initializeData = () => {
   nodes.value.forEach(node => {
     nodeMap.value[node.id] = node
   })
+
+  props.onPaneReady()
 }
 
 // Add new node

@@ -17,7 +17,7 @@
             :frameTime="frameTime"
         />
 
-        <VueKonva />
+        <VueKonva :onPaneReady="onPaneReady" />
     </div>
 </template>
 
