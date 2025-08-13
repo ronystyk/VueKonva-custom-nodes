@@ -15,8 +15,7 @@
             :config="{
               sceneFunc: (ctx, shape) => drawConnection(ctx, shape, connection),
               stroke: '#996',
-              strokeWidth:2,
-              dash: [7, 3]
+              strokeWidth:2
             }"
           />
         </template>
