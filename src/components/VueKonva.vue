@@ -14,7 +14,7 @@
             :key="`${connection.from}-${connection.to}`"
             :config="{
               sceneFunc: (ctx, shape) => drawConnection(ctx, shape, connection),
-              stroke: '#996',
+              stroke: '#9999',
               strokeWidth:2
             }"
           />
