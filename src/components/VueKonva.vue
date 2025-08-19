@@ -82,8 +82,8 @@ const getNodeComponent = (type) => {
 // Initialize nodes and connections
 const initializeData = () => {
   const nodesQuantity = {
-    rows: 10,
-    cols: 10,
+    rows: 20,
+    cols: 20,
   }
   
   const nodeData = []
