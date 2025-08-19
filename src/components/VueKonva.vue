@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, onUnmounted, computed } from 'vue'
+import { ref, reactive, onMounted, onUnmounted, computed, nextTick } from 'vue'
 import { StartNode, FormNode, EndNode, NODE_TYPES } from '../nodes'
 
 // Stage references
@@ -138,7 +138,9 @@ const initializeData = () => {
     nodeMap.value[node.id] = node
   })
 
-  props.onPaneReady()
+  nextTick(() => {
+    props.onPaneReady()
+  })
 }
 
 // Add new node

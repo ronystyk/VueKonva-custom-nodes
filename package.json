@@ -3,6 +3,7 @@
   "name": "vue-konva-custom-nodes",
   "version": "1.0.0",
   "description": "Instalación mínima de Vue",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
